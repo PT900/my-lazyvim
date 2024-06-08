@@ -3,9 +3,8 @@
 -- Add any additional keymaps here
 
 local keymap = vim.keymap
-local opts = { noremap = true, silent = true }
 
-keymap.set("n", "x", '"_x', opts)          -- Delete single character without saving to clipboard
-keymap.set("n", "<C-a>", "gg<S-v>G", opts) -- Select all
-keymap.set("n", "+", "<C-a>", opts)        -- Increment
-keymap.set("n", "-", "<C-x>", opts)        -- Decrement
+keymap.set("n", "x", '"_x', { noremap = true, silent = true, desc = "Delete single character" })
+keymap.set("n", "<C-a>", "gg<S-v>G", { noremap = true, silent = true, desc = "Select All" })
+keymap.set("n", "+", "<C-a>", { noremap = true, silent = true, desc = "Increment" })
+keymap.set("n", "-", "<C-x>", { noremap = true, silent = true, desc = "Decrement" })
