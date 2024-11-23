@@ -12,3 +12,4 @@ keymap.set("n", "<C-h>", "<Cmd>TmuxNavigateLeft<CR>", { noremap = true, silent =
 keymap.set("n", "<C-l>", "<Cmd>TmuxNavigateRight<CR>", { noremap = true, silent = true, desc = "Window right" })
 keymap.set("n", "<C-j>", "<Cmd>TmuxNavigateDown<CR>", { noremap = true, silent = true, desc = "Window down" })
 keymap.set("n", "<C-k>", "<Cmd>TmuxNavigateUp<CR>", { noremap = true, silent = true, desc = "Window up" })
+keymap.set("n", "<F8>", "<Cmd>ToggleTerm direction=float<CR>", { noremap = true, silent = true, desc = "Terminal" })
