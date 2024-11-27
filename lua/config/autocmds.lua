@@ -6,7 +6,7 @@ local function augroup(name)
   return vim.api.nvim_create_augroup("lazyvim_" .. name, { clear = true })
 end
 
--- Remove comment on newlining (currently not working)
+-- Remove comment on newlining
 vim.api.nvim_create_autocmd("BufEnter", {
   group = augroup("no_comment_on_newline"),
   callback = function()
