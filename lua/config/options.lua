@@ -9,3 +9,4 @@ opt.list = false
 opt.relativenumber = false
 opt.shiftwidth = 4
 opt.tabstop = 4
+vim.g.snacks_animate = false -- Disable all animations
