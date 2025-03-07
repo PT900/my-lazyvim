@@ -12,4 +12,9 @@ keymap.set("n", "<C-h>", "<Cmd>TmuxNavigateLeft<CR>", { noremap = true, silent =
 keymap.set("n", "<C-l>", "<Cmd>TmuxNavigateRight<CR>", { noremap = true, silent = true, desc = "Window right" })
 keymap.set("n", "<C-j>", "<Cmd>TmuxNavigateDown<CR>", { noremap = true, silent = true, desc = "Window down" })
 keymap.set("n", "<C-k>", "<Cmd>TmuxNavigateUp<CR>", { noremap = true, silent = true, desc = "Window up" })
-keymap.set("n", "yc", "yy<cmd>normal gcc<CR>p") -- Duplicate a line and comment out the first line
+keymap.set("n", "yc", "yy<Cmd>normal gcc<CR>p") -- Duplicate a line and comment out the first line
+-- Delete word with Ctrl+Backspace
+keymap.set("c", "<C-BS>", "<C-W>", { noremap = true, silent = true })
+keymap.set("i", "<C-BS>", "<C-W>", { noremap = true, silent = true })
+keymap.set("c", "<C-H>", "<C-W>", { noremap = true, silent = true })
+keymap.set("i", "<C-H>", "<C-W>", { noremap = true, silent = true })
