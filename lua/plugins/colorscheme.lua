@@ -76,7 +76,18 @@ return {
       treesitter = true,
     },
   },
-  { "LazyVim/LazyVim", opts = {
-    colorscheme = "oldworld",
-  } },
+  {
+    "rebelot/kanagawa.nvim",
+    name = "kanagawa",
+    priority = 1000,
+    opts = {
+      theme = "wave", -- wave (default), dragon, lotus
+    },
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "oldworld",
+    },
+  },
 }
